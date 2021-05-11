@@ -1,0 +1,133 @@
+@clr-blue: #1e213a;
+@clr-darck-blue: #100E1D;
+@clr-white: #fff;
+@clr-gray: #6e707a;
+@clr-gray2: #E7E7EB;
+@clr-black: #000;
+@clr-purpur: #6e17f7;
+.font {
+  font-family: "Open Sans", sans-serif;
+}
+.font-size-9 {
+  font-size: 0.9rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  .font;
+}
+header {
+  background: @clr-blue;
+  width: 100%;
+  height: 100vh;
+  nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    button {
+      border: @clr-white;
+      background: @clr-gray;
+      padding: 10px 15px;
+      color: @clr-white;
+      .font-size-9;
+      box-shadow: 2px 2px 5px rgb(37, 37, 37);
+      .font;
+    }
+    button:hover {
+      background: #6b6c70;
+    }
+    button:active {
+      background: #585858;
+    }
+    i {
+      font-size: 30px;
+      color: @clr-white;
+      margin-top: 5px;
+    }
+    i:active {
+      color: #585858;
+    }
+  }
+}
+//search-nav-menu
+.search-nav-menu {
+  background: @clr-blue;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  padding: 20px;
+  display: none;
+  z-index: 1000;
+  .fa-times-circle {
+    margin-left: 88%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: @clr-white;
+  }
+  .fa-times-circle:active {
+    color: @clr-gray;
+  }
+  input {
+    width: 70%;
+    height: 40px;
+    padding: 10px 15px;
+    .font;
+    .font-size-9;
+    outline: none;
+  }
+  button {
+    width: 25%;
+    background: @clr-purpur;
+    border: none;
+    color: @clr-white;
+    padding: 10px 15px;
+    .font-size-9;
+    .font;
+  }
+  button:active {
+    background: #5c15cf;
+  }
+}
+//mainWeather
+main{
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  top: 15vh;
+  .mainWeather {
+    text-align: center;
+    color: @clr-gray2;
+    padding: 25px;
+    h1{
+      font-size: 1.5rem;
+    }
+    .weather-Value{
+      margin-top: 50px;
+      font-size: 5rem;
+      span{
+        margin-left: 10px;
+        font-size: 2.5rem;
+      }
+    }
+    .tyte-weather{
+      margin-top: 30px;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  }
+}
+//main-day
+.main-day{
+  width: 100vw;
+  height: 100vh;
+  background: @clr-darck-blue;
+}
+.block {
+  display: block;
+}

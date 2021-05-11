@@ -1,0 +1,129 @@
+.font {
+  font-family: "Open Sans", sans-serif;
+}
+.font-size-9 {
+  font-size: 0.9rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  background: #1e213a;
+  width: 100%;
+  height: 100vh;
+}
+header nav {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+header nav button {
+  border: #fff;
+  background: #6e707a;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 2px 2px 5px #252525;
+          box-shadow: 2px 2px 5px #252525;
+  font-family: "Open Sans", sans-serif;
+}
+header nav button:hover {
+  background: #6b6c70;
+}
+header nav button:active {
+  background: #585858;
+}
+header nav i {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 5px;
+}
+header nav i:active {
+  color: #585858;
+}
+.search-nav-menu {
+  background: #1e213a;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  padding: 20px;
+  display: none;
+  z-index: 1000;
+}
+.search-nav-menu .fa-times-circle {
+  margin-left: 88%;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+.search-nav-menu .fa-times-circle:active {
+  color: #6e707a;
+}
+.search-nav-menu input {
+  width: 70%;
+  height: 40px;
+  padding: 10px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+}
+.search-nav-menu button {
+  width: 25%;
+  background: #6e17f7;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+}
+.search-nav-menu button:active {
+  background: #5c15cf;
+}
+main {
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  top: 15vh;
+}
+main .mainWeather {
+  text-align: center;
+  color: #E7E7EB;
+  padding: 25px;
+}
+main .mainWeather h1 {
+  font-size: 1.5rem;
+}
+main .mainWeather .weather-Value {
+  margin-top: 50px;
+  font-size: 5rem;
+}
+main .mainWeather .weather-Value span {
+  margin-left: 10px;
+  font-size: 2.5rem;
+}
+main .mainWeather .tyte-weather {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.main-day {
+  width: 100vw;
+  height: 100vh;
+  background: #100E1D;
+}
+.block {
+  display: block;
+}
