@@ -33,21 +33,29 @@ navigator.geolocation.getCurrentPosition(function(position) {
       <p class="tyte-weather">${data.current.weather[0].main}</p>
       `
       //Main Day
-      for (let i = 0; i < 7; i++) {
-        document.getElementById(`mainDay${i}`).innerHTML=`
+    for (let i = 0; i < 8; i++) {
+      let grades = Math.floor(data.daily[i].temp.day-273.15);
+      let type = data.daily[i].weather[0].main;
+      let min = Math.floor(data.daily[i].temp.min-273.15);
+      let max = Math.floor(data.daily[i].temp.max-273.15);
+      function dayReal(){
+        if(days[i] !== days[f.getDay()]){
+          return days[i]
+        } else {
+          return "Today"
+        };
+      }
+      let day = dayReal();
+      document.getElementById(`mainDay${i}`).innerHTML=`
       <div>
-        <h2>Today</h2>
-        <p class="weather-Value">${Math.floor(data.daily[i].temp.day-273.15)}<span>ºC</span></p>
-        <p class="weather-Value">${data.daily[i].weather[i].main}</p>
-        <p class="weather-Value">Min-temp: ${Math.floor(data.daily[i].temp.min-273.15)}<span>ºC</span></p>
-        <p class="weather-Value">Max-temp: ${Math.floor(data.daily[i].temp.max-273.15)}<span>ºC</span></p>
+        <h2>${day}</h2>
+        <p class="weather-Value">${grades}<span>ºC</span></p>
+        <p class="weather-Value">${type}</p>
+        <p class="weather-Value">Min-temp: ${min}<span>ºC</span></p>
+        <p class="weather-Value">Max-temp: ${max}<span>ºC</span></p>
       </div>
       `
-      }
-    
-      // Date and Hours
-      var date = new Date();
-     console.log(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+    }
     } catch (error) {
       console.log(error)
     }
