@@ -94,9 +94,10 @@ header nav i:active {
 }
 main {
   width: 100vw;
-  height: 80vh;
+  height: auto;
   position: absolute;
   top: 15vh;
+  background: #1e213a;
 }
 main .mainWeather {
   text-align: center;
@@ -120,21 +121,29 @@ main .mainWeather .tyte-weather {
   margin-bottom: 15px;
 }
 .mainDay {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   background: #100E1D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-x: scroll;
+  margin-top: 25vh;
 }
 .mainDay div {
+  position: static;
   background: #1e213a;
-  width: auto;
-  height: auto;
-  padding: 25px;
-  margin: 10px;
+  margin: 50px 15px;
   text-align: center;
   color: #E7E7EB;
+  width: 90vw;
+  height: 300px;
+  border-radius: 25px;
+}
+.mainDay div div {
+  width: 80vw;
+  height: 275px;
+  margin: 10px;
 }
 .mainDay div h2 {
   font-size: 1.5rem;
@@ -150,10 +159,47 @@ main .mainWeather .tyte-weather {
   font-size: 1.3rem;
   margin-bottom: 25px;
 }
-#mainHightlights0 {
-  background: red;
-  width: 50px;
-  height: 50px;
+.Hightlights {
+  width: 100%;
+  height: auto;
+  padding-block: 25px;
+  color: #E7E7EB;
+  background: #100E1D;
+}
+.Hightlights h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Hightlights div {
+  background: #1e213a;
+  padding: 25px;
+  margin: 25px 20px;
+  text-align: center;
+}
+.Hightlights div h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.Hightlights div .infoModules {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.Hightlights div .infoModules span {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+footer {
+  position: relative;
+  top: 1250px;
+}
+footer p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #fff;
+}
+footer p a {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
 }
 .block {
   display: block;

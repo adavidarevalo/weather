@@ -65,7 +65,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
 function SpeedWidt(a) {
   document.getElementById("SpeedWidt").innerHTML=`
   <h3>Wind status</h3>
-  <p>${a}<span>mph</span></p>
+  <p class="infoModules">${a}<span>mph</span></p>
   <p><i class="fas fa-location-arrow"></i> WSW</p>
   `
 }
@@ -73,7 +73,7 @@ function SpeedWidt(a) {
 function Humidity(b) {
   document.getElementById("Humidity").innerHTML=`
   <h3>Humidity</h3>
-  <p>${b}<span>%</span></p>
+  <p class="infoModules">${b}<span>%</span></p>
   <input type="range" min="0" max="100" step="${b}" readonly="readonly">
   `
 }
@@ -81,14 +81,14 @@ function Humidity(b) {
 function Visibility(c){
   document.getElementById("Visibility").innerHTML=`
   <h3>Visibility</h3>
-  <p>${c}<span>miles</span></p>
+  <p class="infoModules">${c}<span>miles</span></p>
   `
 }
 // Air Pressure
 function AirPressure(a) {
   document.getElementById("Pressure").innerHTML=`
   <h3>Air Pressure</h3>
-  <p>${a}<span>mb</span></p>
+  <p class="infoModules">${a}<span>mb</span></p>
   `
 }
 // days with information
