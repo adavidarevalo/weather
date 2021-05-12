@@ -97,11 +97,11 @@ main {
   height: 80vh;
   position: absolute;
   top: 15vh;
-  padding: 25px;
 }
 main .mainWeather {
   text-align: center;
   color: #E7E7EB;
+  padding: 25px;
 }
 main .mainWeather h1 {
   font-size: 1.5rem;
@@ -117,6 +117,43 @@ main .mainWeather .weather-Value span {
 main .mainWeather .tyte-weather {
   margin-top: 30px;
   font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.mainDay {
+  width: 100vw;
+  height: 100vh;
+  background: #100E1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mainDay div {
+  background: #1e213a;
+  width: auto;
+  height: auto;
+  padding: 25px;
+  margin: 10px;
+  text-align: center;
+  color: #E7E7EB;
+}
+.mainDay div h2 {
+  font-size: 1.5rem;
+}
+.mainDay div .weather-Value-day {
+  font-size: 5rem;
+}
+.mainDay div .weather-Value-day span {
+  margin-left: 10px;
+  font-size: 2.5rem;
+}
+.mainDay div .weather-type-day {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+#mainHightlights0 {
+  background: red;
+  width: 50px;
+  height: 50px;
 }
 .block {
   display: block;

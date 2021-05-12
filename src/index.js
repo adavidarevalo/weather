@@ -32,6 +32,11 @@ navigator.geolocation.getCurrentPosition(function(position) {
       <p class="weather-Value">${Math.floor(tranformationKelvin)}<span>ºC</span></p>
       <p class="tyte-weather">${data.current.weather[0].main}</p>
       `
+      //modules weather
+      SpeedWidt(data.current.wind_speed); 
+      Humidity(data.current.humidity);
+      Visibility(data.current.visibility);
+      AirPressure(data.current.pressure)
       //Main Day
     for (let i = 0; i < 8; i++) {
       let grades = Math.floor(data.daily[i].temp.day-273.15);
@@ -49,19 +54,55 @@ navigator.geolocation.getCurrentPosition(function(position) {
       document.getElementById(`mainDay${i}`).innerHTML=`
       <div>
         <h2>${day}</h2>
-        <p class="weather-Value">${grades}<span>ºC</span></p>
-        <p class="weather-Value">${type}</p>
+        <p class="weather-Value-day">${grades}<span>ºC</span></p>
+        <p class="weather-type-day">${type}</p>
         <p class="weather-Value">Min-temp: ${min}<span>ºC</span></p>
         <p class="weather-Value">Max-temp: ${max}<span>ºC</span></p>
       </div>
       `
-    }
+    };
+      //catch
     } catch (error) {
       console.log(error)
     }
   }
   fetchDataMain();
 });
+//function of modules of weather
+//SpeedWidt
+function SpeedWidt(a) {
+  document.getElementById("SpeedWidt").innerHTML=`
+  <h3>Wind status</h3>
+  <p>${a}<span>mph</span></p>
+  <p><i class="fas fa-location-arrow"></i> WSW</p>
+  `
+}
+//humidity
+function Humidity(b) {
+  document.getElementById("Humidity").innerHTML=`
+  <h3>Humidity</h3>
+  <p>${b}<span>%</span></p>
+  <input type="range" min="0" max="100" step="${b}" readonly="readonly">
+  `
+}
+//Visibility
+function Visibility(c){
+  document.getElementById("Visibility").innerHTML=`
+  <h3>Visibility</h3>
+  <p>${c}<span>miles</span></p>
+  `
+}
+// Air Pressure
+function AirPressure(a) {
+  document.getElementById("Pressure").innerHTML=`
+  <h3>Air Pressure</h3>
+  <p>${a}<span>mb</span></p>
+  `
+}
+// days with information
+function daysInfo(params) {
+  
+}
 
 //search-nav-menu button close
 document.getElementById("faTimesCircle").addEventListener("click",()=>{

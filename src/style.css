@@ -94,9 +94,10 @@ header nav i:active {
 }
 main {
   width: 100vw;
-  height: 80vh;
+  height: auto;
   position: absolute;
   top: 15vh;
+  background: #1e213a;
 }
 main .mainWeather {
   text-align: center;
@@ -119,10 +120,54 @@ main .mainWeather .tyte-weather {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
-.main-day {
+.mainDay {
   width: 100vw;
   height: 100vh;
   background: #100E1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mainDay div {
+  background: #1e213a;
+  width: auto;
+  height: auto;
+  padding: 25px;
+  margin: 10px;
+  text-align: center;
+  color: #E7E7EB;
+}
+.mainDay div h2 {
+  font-size: 1.5rem;
+}
+.mainDay div .weather-Value-day {
+  font-size: 5rem;
+}
+.mainDay div .weather-Value-day span {
+  margin-left: 10px;
+  font-size: 2.5rem;
+}
+.mainDay div .weather-type-day {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+.Hightlights {
+  width: 100%;
+  color: #E7E7EB;
+  background: #100E1D;
+}
+.Hightlights h2 {
+  font-size: 1.5rem;
+}
+.Hightlights div {
+  background: #1e213a;
+  padding: 25px;
+  margin: 20px;
+}
+footer {
+  background: red;
+  position: absolute;
+  top: 1000px;
 }
 .block {
   display: block;

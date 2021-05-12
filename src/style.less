@@ -97,9 +97,10 @@ header {
 //mainWeather
 main{
   width: 100vw;
-  height: 80vh;
+  height: auto;
   position: absolute;
   top: 15vh;
+  background: @clr-blue;
   .mainWeather {
     text-align: center;
     color: @clr-gray2;
@@ -123,10 +124,54 @@ main{
   }
 }
 //main-day
-.main-day{
+.mainDay{
   width: 100vw;
   height: 100vh;
   background: @clr-darck-blue;
+  display: flex;
+  div{
+    background: @clr-blue;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+    color: @clr-gray2;
+    h2{
+      font-size: 1.5rem;
+    }
+    .weather-Value-day{
+      font-size: 5rem;
+      span{
+        margin-left: 10px;
+        font-size: 2.5rem;
+      }
+    }
+    .weather-type-day{
+      font-size: 1.3rem;
+      margin-bottom: 25px;
+    }
+  }
+}
+//Today´s Hightlights
+.Hightlights{
+  width: 100%;
+  color: @clr-gray2;
+  background: @clr-darck-blue;
+  h2{
+    font-size: 1.5rem;
+  }
+  div{
+    background: @clr-blue;
+    padding: 25px;
+    margin: 20px;
+  }
+}
+//Footer
+footer{
+  background: red;
+  position: absolute;
+  top:1000px;
 }
 .block {
   display: block;
