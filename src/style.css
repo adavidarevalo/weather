@@ -166,9 +166,6 @@ main .mainWeather .tyte-weather {
   font-size: 1.3rem;
   margin-bottom: 25px;
 }
-.mainDay div:hover {
-  background: #1c1e33;
-}
 h2 {
   font-size: 1.5rem;
   text-align: center;
@@ -214,7 +211,7 @@ h2 {
 }
 footer {
   position: relative;
-  top: 250vh;
+  padding-block: 25px;
 }
 footer p {
   font-size: 1.1rem;
@@ -232,6 +229,34 @@ footer p a {
   .mainDay {
     overflow-x: scroll;
   }
+  .mainDay::-webkit-scrollbar {
+    background: transparent;
+    height: 5px;
+  }
+  .mainDay::-webkit-scrollbar-thumb {
+    background: #E7E7EB;
+    height: 1px;
+    border-radius: 10px;
+  }
+  footer {
+    top: 150vh;
+    background: #6e17f7;
+  }
+}
+@media (max-width: 578px) {
+  footer {
+    top: 230vh;
+  }
+}
+@media (min-width: 578px) {
+  footer {
+    top: 150vh;
+  }
+}
+@media (min-width: 1160px) {
+  footer {
+    top: 120vh;
+  }
 }
 @media (min-width: 1200px) {
   .mainDay {
@@ -243,5 +268,10 @@ footer p a {
   }
   .mainDay div {
     max-width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    top: 250vh;
   }
 }

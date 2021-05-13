@@ -168,9 +168,6 @@ main{
       margin-bottom: 25px;
     }
   }
-  div:hover{
-    background: #1c1e33;
-  }
 }
 //Today´s Hightlights
 h2{
@@ -214,7 +211,7 @@ h2{
 //Footer
 footer{
   position: relative;
-  top:250vh;
+  padding-block: 25px;
   p{
     font-size: 1.1rem;
     text-align: center;
@@ -233,6 +230,34 @@ footer{
   .mainDay{
     overflow-x: scroll;
   }
+  .mainDay::-webkit-scrollbar{
+    background: transparent;
+    height: 5px;
+  }
+  .mainDay::-webkit-scrollbar-thumb{
+    background: @clr-gray2;
+    height: 1px;
+    border-radius: 10px;
+  }
+  footer{
+    top:150vh;
+    background: @clr-purpur;
+  }
+}
+@media(max-width:578px){
+  footer{
+    top:230vh;
+  }
+}
+@media(min-width:578px){
+  footer{
+    top:150vh;
+  }
+}
+@media(min-width:1160px){
+  footer{
+    top:120vh;
+  }
 }
 @media (min-width: 1200px){
   .mainDay{
@@ -241,5 +266,10 @@ footer{
     div{
       max-width: 300px;
     }
+  }
+}
+@media (min-width: 1200px){
+  footer{
+    top:250vh;
   }
 }
