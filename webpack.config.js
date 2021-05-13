@@ -40,6 +40,20 @@ module.exports={
       {
         test:/\.(png|svg|jpe?g|gif)$/i,
         use:["file-loader"]
+      },
+      {
+        test:/\.(woff|woff2)$/i,
+        use:{
+          loader: "url-loader",
+          options:{
+            limit: 10000,
+            minetype: "application/font-woff",
+            name:"[name].[ext]",
+            outputPath: "./assets/fonts/",
+            publicPath: "./assets/fonts/",
+            esModule: false
+          }
+        }
       }
     ]
   },

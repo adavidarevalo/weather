@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/bd269fc52d.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <title>Weather</title>
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -20,14 +19,14 @@
     </nav>
     <section class="search-nav-menu" id="search-nav-menu">
       <i class="fas fa-times-circle" id="faTimesCircle"></i>
-      <input type="text" placeholder="Search your Contry" id="searchNavInput">
+      <input type="search" placeholder="Search your Contry" id="searchNavInput">
       <button id="search-nav-button">Search</button>
     </section>
   </header>
   <main>
     <section id="mainWeather" class="mainWeather">
     </section>
-  <section class="mainDay">
+  <section class="mainDay" >
     <div id="mainDay0"></div>
     <div id="mainDay1"></div>
     <div id="mainDay2"></div>
@@ -38,10 +37,12 @@
   </section>
   <section class="Hightlights" id="carousel">
     <h2>Today´s Hightlights</h2>
+    <div class="Hightlights-container">
     <div id="SpeedWidt"></div>
     <div id="Humidity"></div>
     <div id="Visibility"></div>
     <div id="Pressure"></div>
+  </div>
   </section>
   </main>
   <footer>

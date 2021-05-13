@@ -20,16 +20,16 @@
     "@babel/preset-env": "^7.14.1",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "less-loader": "^8.1.1",
     "mini-css-extract-plugin": "^1.6.0",
+    "url-loader": "^4.1.1",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
   },
   "_id": "weather@1.0.0",
-  "dependencies": {
-    "file-loader": "^6.2.0"
-  }
+  "dependencies": {}
 }
