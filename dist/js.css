@@ -210,8 +210,8 @@ h2 {
   margin-left: 10px;
 }
 footer {
-  position: relative;
   padding-block: 25px;
+  background: #6e17f7;
 }
 footer p {
   font-size: 1.1rem;
@@ -238,25 +238,6 @@ footer p a {
     height: 1px;
     border-radius: 10px;
   }
-  footer {
-    top: 150vh;
-    background: #6e17f7;
-  }
-}
-@media (max-width: 578px) {
-  footer {
-    top: 230vh;
-  }
-}
-@media (min-width: 578px) {
-  footer {
-    top: 150vh;
-  }
-}
-@media (min-width: 1160px) {
-  footer {
-    top: 120vh;
-  }
 }
 @media (min-width: 1200px) {
   .mainDay {
@@ -270,9 +251,19 @@ footer p a {
     max-width: 300px;
   }
 }
-@media (min-width: 1200px) {
+@media (max-width: 579px) {
   footer {
-    top: 250vh;
+    margin-top: 1250px;
+  }
+}
+@media (min-width: 580px) {
+  footer {
+    margin-top: 840px;
+  }
+}
+@media (min-width: 1159px) {
+  footer {
+    margin-top: 640px;
   }
 }
 
